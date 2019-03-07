@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('kategori',function(){
+    return "halaman kategori";
+  
+  } );
+  
+Route::resource('kategori','kategoriController');
+
+/*Route::resource('kategori','kategoriController')->only(['index','show']);*/

@@ -14,8 +14,13 @@ class CreateFilm extends Migration
     public function up()
     {
         Schema::create('film', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->bigIncrements('id_film');
+            $table->integer('id_kategori');
+            $table->string('judul',25);
+            $table->string('sutradara',50);
+            $table->string('tahun_rilis',50);
+            $table->text('sinopsis');
+            $table->string('tgl_input',50);
         });
     }
 

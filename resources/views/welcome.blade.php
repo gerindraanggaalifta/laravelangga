@@ -79,7 +79,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="{{ asset('abc/js/freelancer.min.js') }}"></script>
-
+  
 </body>
 
 </html>
