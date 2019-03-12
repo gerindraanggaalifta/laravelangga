@@ -20,6 +20,20 @@ Route::get('kategori',function(){
     return "halaman kategori";
   
   } );
+
+  Route::get('layout', function(){
+    return view('Layout.master');
+  }
+
+);
+
+// Route::get('layout', function(){
+//   return view('Layout.sidebar');
+// });
+Route::get('layout', function(){
+  return view('Layout.master');
+});
+
   
 Route::resource('kategori','kategoriController');
 
