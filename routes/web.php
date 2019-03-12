@@ -34,6 +34,10 @@ Route::get('layout', function(){
   return view('Layout.master');
 });
 
+Route::get('template', function(){
+  return view('dashboard.content');
+});
+
   
 Route::resource('kategori','kategoriController');
 
