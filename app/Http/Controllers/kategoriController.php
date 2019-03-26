@@ -129,7 +129,7 @@ public function editt($id)
 public function updatee(Request $request)
 {
 	// update data pegawai
-	 DB::table('kategori')->where('id_kategori',$request->id)->updatee([
+	 DB::table('kategori')->where('id_kategori',$request->id)->update([
 		'id_kategori' => $request->id_kategori,
 		'nama_kategori' => $request->nama_kategori,
 		'created_at' => $request->created_at,
